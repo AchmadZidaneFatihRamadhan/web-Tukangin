@@ -56,6 +56,8 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/', fn () => view('customer.home'))->name('home');
 
+Route::get('/', function () {
+    return 'Web OK';
 });
 
 require __DIR__ . '/auth.php';
