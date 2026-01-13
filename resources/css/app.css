@@ -1,3 +1,142 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo small {
+    display: block;
+    font-size: 12px;
+    color: #777;
+}
+
+/* BUTTON */
+.btn-outline {
+    background: #fff;
+    border: 1px solid #ff6a00;
+    color: #ff6a00;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+.btn-cart {
+    background: #ff6a00;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+}
+
+/* HERO */
+.hero {
+    background: #ff6a00;
+    color: #fff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero button {
+    background: #fff;
+    color: #ff6a00;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* CATEGORY */
+.category {
+    margin: 30px 0;
+}
+
+.category button {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 6px 14px;
+    margin: 4px;
+    border-radius: 20px;
+}
+
+.category .active {
+    background: #ff6a00;
+    color: #fff;
+}
+
+/* PRODUCT */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+}
+
+.product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #ff6a00;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+.price {
+    color: #ff6a00;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.btn-outline-small {
+    border: 1px solid #ff6a00;
+    background: #fff;
+    color: #ff6a00;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.btn-primary-small {
+    background: #ff6a00;
+    border: none;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
